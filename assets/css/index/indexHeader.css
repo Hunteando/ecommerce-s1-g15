@@ -4,9 +4,10 @@
 }
 .encabezado__Ayuda{
     background-color: #000000;
-    width: 100%;
+    width: 100vw;
     height: 44px;
     padding: 10px 20px 20px 20px;
+    padding-bottom: 20px;
     
 }
 .encabezado__Ayuda-Menu{
@@ -36,11 +37,11 @@
 
 .encabezado__container{
     background-color: var(--fondo-azul);
-    width: 100%;
+    /* width: 100%; */
     min-height: 10vh;
     padding: 10px 20px;
     display: grid;
-    grid-template-columns: 0.6fr 1.8fr 1.3fr;
+    grid-template-columns: 1fr 50% 1fr;
     align-items: center;
     overflow: hidden;
 }
@@ -65,7 +66,7 @@
 } */
 
 .encabezado__buscador-container{
-    padding: 0px;
+    padding: 20px;
     display: flex;
     justify-content: center; 
 
@@ -252,6 +253,10 @@
     .encabezado__container{        
         grid-template-columns: 40% 1fr; /*0.6fr 1.8fr 1.3fr; */
     }
+    .encabezado__Ayuda-Menu{      
+      float:unset;
+      margin-top: 1rem;
+  }
     .encabezado__menu  .button{
         /* width:100%; */
       display: block;
